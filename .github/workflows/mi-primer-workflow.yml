@@ -1,0 +1,12 @@
+ name: Mi primer workflow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Decir hola
+        run: echo "¡Hola! Este workflow se ejecutó automáticamente 🎉"
